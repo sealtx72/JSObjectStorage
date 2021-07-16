@@ -50,12 +50,10 @@ function displayHeroes(heroes) {
 }
 //delete data in local storage, activated by addEventListener
 function clearHeroes() {
-    let clearingHouse = [];
 
     heroes2 = [];
-    localStorage.setItem('heroArray', JSON.stringify(clearingHouse));
-
-    displayHeroes(clearingHouse);
+    localStorage.setItem('heroArray', JSON.stringify(heroes2));
+    displayHeroes(heroes2);
 }
 //Clearing fields after submiting
 function formClear() {
